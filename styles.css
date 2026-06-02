@@ -98,3 +98,329 @@ footer {
     color: var(--muted);
     font-size: 0.95rem;
 }
+
+.product-page {
+    --product-bg: #f2f0eb;
+    --product-text: #171a1c;
+    --product-muted: #5e6267;
+    --product-panel: #ffffff;
+    --product-line: #ddd6ca;
+    --product-teal: #1f756d;
+    --product-blue: #385f86;
+    --product-ochre: #d59332;
+    --product-rust: #89451f;
+    background: var(--product-bg);
+    color: var(--product-text);
+}
+
+@media (prefers-color-scheme: dark) {
+    .product-page {
+        --product-bg: #151719;
+        --product-text: #f5f2ed;
+        --product-muted: #c2bcb3;
+        --product-panel: #202326;
+        --product-line: #3a3d40;
+        --product-teal: #63c8bb;
+        --product-blue: #8eb3d6;
+        --product-ochre: #e6aa50;
+        --product-rust: #cc7547;
+    }
+}
+
+.product-page main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.product-hero {
+    position: relative;
+    min-height: 92svh;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.product-hero-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+    z-index: -2;
+}
+
+.product-hero-shade {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(90deg, rgba(11, 13, 14, 0.88), rgba(11, 13, 14, 0.48) 52%, rgba(11, 13, 14, 0.14)),
+        linear-gradient(0deg, rgba(11, 13, 14, 0.9), rgba(11, 13, 14, 0.08) 62%);
+    z-index: -1;
+}
+
+.product-hero-copy {
+    width: min(720px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 88px 0 96px;
+    color: #fffaf2;
+}
+
+.product-hero-copy h1 {
+    max-width: 680px;
+    font-size: clamp(3.1rem, 12vw, 7.5rem);
+    letter-spacing: 0;
+}
+
+.product-hero-copy p {
+    max-width: 620px;
+    color: rgba(255, 250, 242, 0.86);
+    font-size: clamp(1.15rem, 2.5vw, 1.45rem);
+}
+
+.eyebrow {
+    margin: 0 0 12px;
+    color: var(--product-ochre);
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+.button-link {
+    display: inline-flex;
+    min-height: 46px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 250, 242, 0.7);
+    border-radius: 8px;
+    padding: 10px 18px;
+    color: #fffaf2;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.button-link.primary {
+    border-color: #fffaf2;
+    background: #fffaf2;
+    color: #173431;
+}
+
+.product-intro,
+.feature-band,
+.split-feature,
+.privacy-callout,
+.product-footer {
+    width: min(1120px, calc(100% - 40px));
+    margin: 0 auto;
+}
+
+.product-intro {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(280px, 1.1fr);
+    gap: 48px;
+    padding: 70px 0 34px;
+}
+
+.product-intro h2,
+.feature-band h2,
+.split-feature h2,
+.privacy-callout h2 {
+    margin: 0;
+    font-size: clamp(2rem, 5vw, 4rem);
+    line-height: 1.04;
+    letter-spacing: 0;
+}
+
+.product-intro p,
+.split-feature p,
+.privacy-callout p,
+.feature-grid p {
+    color: var(--product-muted);
+}
+
+.phone-showcase {
+    width: min(1180px, calc(100% - 28px));
+    margin: 0 auto;
+    padding: 34px 0 72px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    align-items: start;
+}
+
+.phone-frame {
+    margin: 0;
+    border-radius: 30px;
+    padding: 10px;
+    background: #101112;
+    box-shadow: 0 18px 54px rgba(34, 28, 20, 0.2);
+}
+
+.phone-frame.large.raised {
+    margin-top: 42px;
+}
+
+.phone-frame img {
+    display: block;
+    width: 100%;
+    border-radius: 22px;
+}
+
+.phone-frame figcaption {
+    padding: 14px 8px 6px;
+    color: #f7f2ea;
+    font-size: 0.95rem;
+    line-height: 1.35;
+}
+
+.feature-band {
+    padding: 72px 0;
+    border-top: 1px solid var(--product-line);
+    border-bottom: 1px solid var(--product-line);
+}
+
+.feature-band > h2 {
+    max-width: 780px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 30px;
+}
+
+.feature-grid article {
+    border: 1px solid var(--product-line);
+    border-radius: 8px;
+    padding: 20px;
+    background: color-mix(in srgb, var(--product-panel) 88%, transparent);
+}
+
+.feature-grid h3 {
+    margin: 0 0 8px;
+    font-size: 1.1rem;
+}
+
+.feature-grid p {
+    margin: 0;
+    font-size: 0.98rem;
+}
+
+.split-feature {
+    display: grid;
+    grid-template-columns: minmax(280px, 0.9fr) minmax(240px, 360px);
+    gap: 52px;
+    align-items: center;
+    padding: 76px 0;
+}
+
+.split-feature.reverse {
+    grid-template-columns: minmax(240px, 360px) minmax(280px, 0.9fr);
+}
+
+.split-feature.reverse > div {
+    order: 2;
+}
+
+.split-feature.reverse > figure {
+    order: 1;
+}
+
+.split-feature .phone-frame {
+    max-width: 360px;
+}
+
+.privacy-callout {
+    margin-bottom: 64px;
+    border-radius: 8px;
+    padding: 34px;
+    background: var(--product-teal);
+    color: #fffaf2;
+}
+
+.privacy-callout .eyebrow,
+.privacy-callout p,
+.privacy-callout a {
+    color: #fffaf2;
+}
+
+.privacy-callout p {
+    max-width: 780px;
+}
+
+.product-footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    border-top: 1px solid var(--product-line);
+    padding: 26px 0 44px;
+}
+
+.product-footer a {
+    color: var(--product-muted);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+@media (max-width: 840px) {
+    .product-hero {
+        min-height: 88svh;
+    }
+
+    .product-hero-image {
+        object-position: 58% 14%;
+    }
+
+    .product-hero-shade {
+        background:
+            linear-gradient(0deg, rgba(11, 13, 14, 0.92), rgba(11, 13, 14, 0.46) 62%, rgba(11, 13, 14, 0.18));
+    }
+
+    .product-hero-copy {
+        padding: 84px 0 58px;
+    }
+
+    .product-intro,
+    .split-feature,
+    .split-feature.reverse {
+        grid-template-columns: 1fr;
+        gap: 26px;
+    }
+
+    .split-feature.reverse > div,
+    .split-feature.reverse > figure {
+        order: initial;
+    }
+
+    .phone-showcase,
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .phone-showcase {
+        width: min(430px, calc(100% - 28px));
+    }
+
+    .phone-frame.large.raised {
+        margin-top: 0;
+    }
+
+    .split-feature .phone-frame {
+        max-width: min(360px, 100%);
+    }
+
+    .privacy-callout {
+        padding: 26px;
+    }
+}
