@@ -424,3 +424,167 @@ footer {
         padding: 26px;
     }
 }
+
+.madegood-page {
+    --product-bg: #f3f1ea;
+    --product-text: #162025;
+    --product-muted: #5c6569;
+    --product-panel: #fffdf8;
+    --product-line: #d8d4c8;
+    --product-teal: #007a7a;
+    --product-blue: #265b80;
+    --product-ochre: #b47a2e;
+    background: var(--product-bg);
+    color: var(--product-text);
+}
+
+@media (prefers-color-scheme: dark) {
+    .madegood-page {
+        --product-bg: #121719;
+        --product-text: #f6f3ec;
+        --product-muted: #bcc4c6;
+        --product-panel: #1d2427;
+        --product-line: #364044;
+        --product-teal: #52c2c0;
+        --product-blue: #80add0;
+        --product-ochre: #e0aa5d;
+    }
+}
+
+.madegood-page main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.madegood-hero {
+    width: min(1120px, calc(100% - 40px));
+    min-height: 82svh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 440px);
+    gap: 68px;
+    align-items: center;
+    padding: 76px 0;
+}
+
+.madegood-hero-copy h1 {
+    max-width: 760px;
+    font-size: clamp(3.5rem, 10vw, 7.6rem);
+    line-height: 0.92;
+    letter-spacing: -0.055em;
+}
+
+.madegood-hero-copy > p:not(.eyebrow) {
+    max-width: 650px;
+    color: var(--product-muted);
+    font-size: clamp(1.15rem, 2.5vw, 1.45rem);
+}
+
+.madegood-page .button-link {
+    border-color: var(--product-blue);
+    color: var(--product-blue);
+}
+
+.madegood-page .button-link.primary {
+    background: var(--product-blue);
+    color: #fff;
+}
+
+.madegood-mark {
+    aspect-ratio: 1;
+    display: grid;
+    grid-template-columns: 1fr 12px 1fr;
+    gap: 14px;
+    align-items: stretch;
+    padding: 48px;
+    border: 8px solid var(--product-line);
+    border-radius: 22%;
+    background: var(--product-panel);
+    box-shadow: 0 30px 80px rgba(29, 38, 42, 0.18);
+}
+
+.madegood-before,
+.madegood-after {
+    position: relative;
+    border-radius: 12%;
+}
+
+.madegood-before {
+    display: grid;
+    align-content: center;
+    gap: 24px;
+    padding: 28px;
+    background: var(--product-blue);
+}
+
+.madegood-before span {
+    height: 8px;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.madegood-divider {
+    border-radius: 999px;
+    background: var(--product-ochre);
+}
+
+.madegood-after {
+    background: var(--product-teal);
+}
+
+.madegood-after span {
+    position: absolute;
+    width: 40%;
+    height: 66%;
+    left: 30%;
+    top: 12%;
+    border: solid rgba(255, 255, 255, 0.92);
+    border-width: 0 10px 10px 0;
+    transform: rotate(42deg);
+}
+
+.madegood-workflow {
+    width: min(1120px, calc(100% - 40px));
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(300px, 1.1fr);
+    gap: 54px;
+    padding: 76px 0;
+}
+
+.madegood-workflow h2 {
+    margin: 0;
+    font-size: clamp(2rem, 5vw, 4rem);
+    line-height: 1.04;
+}
+
+.madegood-workflow ol {
+    margin: 0;
+    padding-left: 1.4em;
+}
+
+.madegood-workflow li {
+    margin-bottom: 20px;
+    color: var(--product-muted);
+}
+
+.madegood-workflow strong {
+    color: var(--product-text);
+}
+
+@media (max-width: 840px) {
+    .madegood-hero,
+    .madegood-workflow {
+        grid-template-columns: 1fr;
+    }
+
+    .madegood-hero {
+        gap: 44px;
+        padding: 64px 0;
+    }
+
+    .madegood-mark {
+        width: min(420px, 100%);
+        justify-self: center;
+    }
+}

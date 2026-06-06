@@ -2,29 +2,23 @@
 
 Blue Leaf Kobo is dedicated to repair, recycle, and reuse. We make practical apps that help everyday people and professionals keep useful things out of landfill.
 
-This repository contains the public GitHub Pages site for Blue Leaf Kobo app support and privacy policies.
+This repository contains the public GitHub Pages site for Blue Leaf Kobo app
+marketing, support, and privacy pages.
 
 ## Publish
 
-Copy the contents of this folder into the public GitHub repository named:
+The public GitHub repository is:
 
 ```text
 blueleafkobo.github.io
 ```
 
-Then enable GitHub Pages:
+GitHub Pages publishes the site from `main` at:
 
-1. Open the repository on GitHub.
-2. Go to Settings > Pages.
-3. Set Source to "Deploy from a branch".
-4. Set Branch to `main` and folder to `/root`.
-5. Save.
-
-The site should publish at:
-
-```text
 https://blueleafkobo.github.io/
 ```
+
+Future updates are published by committing changes and pushing `main`.
 
 ## Support email
 
