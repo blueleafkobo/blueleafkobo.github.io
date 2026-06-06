@@ -431,8 +431,8 @@ footer {
     --product-muted: #5c6569;
     --product-panel: #fffdf8;
     --product-line: #d8d4c8;
-    --product-teal: #007a7a;
-    --product-blue: #265b80;
+    --product-teal: #0e5758;
+    --product-blue: #d95847;
     --product-ochre: #b47a2e;
     background: var(--product-bg);
     color: var(--product-text);
@@ -445,8 +445,8 @@ footer {
         --product-muted: #bcc4c6;
         --product-panel: #1d2427;
         --product-line: #364044;
-        --product-teal: #52c2c0;
-        --product-blue: #80add0;
+        --product-teal: #69c4bd;
+        --product-blue: #ff8170;
         --product-ochre: #e0aa5d;
     }
 }
@@ -493,54 +493,11 @@ footer {
 
 .madegood-mark {
     aspect-ratio: 1;
-    display: grid;
-    grid-template-columns: 1fr 12px 1fr;
-    gap: 14px;
-    align-items: stretch;
-    padding: 48px;
-    border: 8px solid var(--product-line);
+    display: block;
+    width: 100%;
+    height: auto;
     border-radius: 22%;
-    background: var(--product-panel);
     box-shadow: 0 30px 80px rgba(29, 38, 42, 0.18);
-}
-
-.madegood-before,
-.madegood-after {
-    position: relative;
-    border-radius: 12%;
-}
-
-.madegood-before {
-    display: grid;
-    align-content: center;
-    gap: 24px;
-    padding: 28px;
-    background: var(--product-blue);
-}
-
-.madegood-before span {
-    height: 8px;
-    background: rgba(255, 255, 255, 0.7);
-}
-
-.madegood-divider {
-    border-radius: 999px;
-    background: var(--product-ochre);
-}
-
-.madegood-after {
-    background: var(--product-teal);
-}
-
-.madegood-after span {
-    position: absolute;
-    width: 40%;
-    height: 66%;
-    left: 30%;
-    top: 12%;
-    border: solid rgba(255, 255, 255, 0.92);
-    border-width: 0 10px 10px 0;
-    transform: rotate(42deg);
 }
 
 .madegood-workflow {
