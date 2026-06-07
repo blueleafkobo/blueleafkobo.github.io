@@ -99,6 +99,251 @@ footer {
     font-size: 0.95rem;
 }
 
+footer nav {
+    margin: 0 0 14px;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+.home-page main {
+    width: min(1120px, calc(100% - 32px));
+}
+
+.home-page header {
+    max-width: 760px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    margin: 36px 0 24px;
+}
+
+.product-card {
+    --card-accent: #1f6f68;
+    --card-button: #173f3c;
+    position: relative;
+    min-height: 590px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    overflow: hidden;
+    isolation: isolate;
+    border: 1px solid color-mix(in srgb, var(--card-accent) 28%, var(--line));
+    border-radius: 28px;
+    padding: 32px;
+    background: var(--panel);
+    box-shadow: 0 18px 45px rgba(28, 32, 34, 0.08);
+    transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 24px 58px rgba(28, 32, 34, 0.14);
+}
+
+.madegood-card {
+    --card-accent: #e4513f;
+    --card-button: #064f57;
+    background:
+        radial-gradient(circle at 15% 5%, rgba(236, 83, 65, 0.18), transparent 42%),
+        linear-gradient(145deg, #fffaf4 0%, #f6eee4 100%);
+}
+
+.mixer-card {
+    --card-accent: #d9902d;
+    --card-button: #2e756f;
+    background:
+        radial-gradient(circle at 90% 8%, rgba(226, 151, 49, 0.22), transparent 38%),
+        linear-gradient(145deg, #fffaf0 0%, #eef4ee 100%);
+}
+
+.product-card-copy {
+    position: relative;
+    z-index: 3;
+}
+
+.product-card h2 {
+    margin: 6px 0 14px;
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1;
+    letter-spacing: -0.035em;
+}
+
+.product-card-copy > p:not(.product-kicker) {
+    max-width: 440px;
+    margin: 0;
+    color: #4e5153;
+    font-size: 1.06rem;
+}
+
+.product-kicker {
+    margin: 0;
+    color: var(--card-accent);
+    font-size: 0.76rem;
+    font-weight: 800;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+}
+
+.product-card-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px 16px;
+    margin-top: 24px;
+}
+
+.product-card-actions a {
+    color: #4e5153;
+    font-size: 0.9rem;
+    font-weight: 650;
+    text-decoration: none;
+}
+
+.product-card-actions .product-card-button {
+    display: inline-flex;
+    min-height: 46px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 999px;
+    padding: 10px 18px;
+    background: var(--card-button);
+    color: #fffdf8;
+    font-size: 0.95rem;
+    box-shadow: 0 9px 24px color-mix(in srgb, var(--card-button) 22%, transparent);
+}
+
+.product-card-button span {
+    font-size: 1.2rem;
+    transition: transform 180ms ease;
+}
+
+.product-card-button:hover span {
+    transform: translateX(3px);
+}
+
+.product-card-art {
+    position: relative;
+    min-height: 285px;
+    margin: 26px -10px -24px;
+}
+
+.product-card-art img {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    z-index: 1;
+    display: block;
+    width: 245px;
+    height: auto;
+    max-width: 70%;
+    border-radius: 24%;
+    filter: drop-shadow(0 20px 24px rgba(36, 32, 24, 0.17));
+    transform: rotate(2deg);
+}
+
+.mixer-card .product-card-art img {
+    right: 14px;
+    width: 235px;
+    max-width: 68%;
+    transform: rotate(-2deg);
+}
+
+.pixel-trail {
+    position: absolute;
+    left: 12%;
+    bottom: 15%;
+    width: 130px;
+    height: 125px;
+    opacity: 0.65;
+    background:
+        linear-gradient(135deg, rgba(228, 81, 63, 0.95), rgba(6, 79, 87, 0.9));
+    clip-path: polygon(0 35%, 18% 35%, 18% 22%, 35% 22%, 35% 8%, 48% 8%, 48% 0, 62% 0, 62% 16%, 78% 16%, 78% 30%, 100% 30%, 100% 45%, 82% 45%, 82% 60%, 65% 60%, 65% 75%, 48% 75%, 48% 90%, 32% 90%, 32% 100%, 16% 100%, 16% 82%, 0 82%);
+    filter: blur(0.3px);
+    transform: rotate(-16deg);
+}
+
+.paint-swatch {
+    position: absolute;
+    border-radius: 50% 46% 54% 42%;
+    filter: blur(0.2px);
+}
+
+.swatch-one {
+    left: 5%;
+    bottom: 20%;
+    width: 128px;
+    height: 86px;
+    background: rgba(217, 144, 45, 0.62);
+    transform: rotate(-12deg);
+}
+
+.swatch-two {
+    left: 25%;
+    bottom: 8%;
+    width: 115px;
+    height: 80px;
+    background: rgba(47, 125, 117, 0.62);
+    transform: rotate(8deg);
+}
+
+.swatch-three {
+    left: 11%;
+    bottom: 4%;
+    width: 62px;
+    height: 48px;
+    background: rgba(151, 65, 43, 0.52);
+}
+
+@media (prefers-color-scheme: dark) {
+    .madegood-card {
+        background:
+            radial-gradient(circle at 15% 5%, rgba(228, 81, 63, 0.24), transparent 42%),
+            linear-gradient(145deg, #262222 0%, #1d2324 100%);
+    }
+
+    .mixer-card {
+        background:
+            radial-gradient(circle at 90% 8%, rgba(217, 144, 45, 0.22), transparent 38%),
+            linear-gradient(145deg, #28241d 0%, #1b2523 100%);
+    }
+
+    .product-card-copy > p:not(.product-kicker),
+    .product-card-actions a {
+        color: #c9c8c4;
+    }
+}
+
+@media (max-width: 780px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-card {
+        min-height: 560px;
+    }
+}
+
+@media (max-width: 520px) {
+    .product-card {
+        min-height: 520px;
+        border-radius: 22px;
+        padding: 25px;
+    }
+
+    .product-card-art {
+        min-height: 245px;
+    }
+
+    .product-card-art img {
+        width: 215px;
+        max-width: 68%;
+    }
+}
+
 .product-page {
     --product-bg: #f2f0eb;
     --product-text: #171a1c;
