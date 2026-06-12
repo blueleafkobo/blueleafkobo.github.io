@@ -245,6 +245,10 @@ footer p {
     transform: rotate(2deg);
 }
 
+.madegood-card .product-card-art img {
+    border-radius: 21.5%;
+}
+
 .mixer-card .product-card-art img {
     right: 14px;
     width: 235px;
@@ -741,7 +745,7 @@ footer p {
     display: block;
     width: 100%;
     height: auto;
-    border-radius: 22%;
+    border-radius: 21.5%;
     box-shadow: 0 30px 80px rgba(29, 38, 42, 0.18);
 }
 
