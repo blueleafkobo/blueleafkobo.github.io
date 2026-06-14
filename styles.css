@@ -474,6 +474,8 @@ footer a:focus-visible {
 
 .product-intro,
 .feature-band,
+.audience-section,
+.faq-section,
 .split-feature,
 .privacy-callout,
 .product-footer {
@@ -490,6 +492,8 @@ footer a:focus-visible {
 
 .product-intro h2,
 .feature-band h2,
+.audience-section h2,
+.faq-section h2,
 .split-feature h2,
 .privacy-callout h2 {
     margin: 0;
@@ -499,6 +503,8 @@ footer a:focus-visible {
 }
 
 .product-intro p,
+.audience-section p,
+.faq-section p,
 .split-feature p,
 .privacy-callout p,
 .feature-grid p {
@@ -570,6 +576,49 @@ footer a:focus-visible {
 }
 
 .feature-grid p {
+    margin: 0;
+    font-size: 0.98rem;
+}
+
+.audience-section {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(280px, 1.1fr);
+    gap: 48px;
+    padding: 72px 0;
+    border-bottom: 1px solid var(--product-line);
+}
+
+.audience-section h2,
+.faq-section h2 {
+    margin: 0;
+}
+
+.audience-section > p {
+    margin: 0;
+}
+
+.faq-section {
+    padding: 72px 0;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 30px;
+}
+
+.faq-grid article {
+    border-top: 3px solid var(--product-teal);
+    padding: 20px 0 0;
+}
+
+.faq-grid h3 {
+    margin: 0 0 10px;
+    font-size: 1.1rem;
+}
+
+.faq-grid p {
     margin: 0;
     font-size: 0.98rem;
 }
@@ -657,6 +706,7 @@ footer a:focus-visible {
     }
 
     .product-intro,
+    .audience-section,
     .split-feature,
     .split-feature.reverse {
         grid-template-columns: 1fr;
@@ -669,7 +719,8 @@ footer a:focus-visible {
     }
 
     .phone-showcase,
-    .feature-grid {
+    .feature-grid,
+    .faq-grid {
         grid-template-columns: 1fr;
     }
 

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" role="img" aria-labelledby="title">
+  <title id="title">Blue Leaf Kobo</title>
+  <rect width="180" height="180" rx="38" fill="#f7f3e9"/>
+  <path d="M134 34c-45 3-77 20-90 49-11 25-3 49 17 61 21 13 48 7 63-15 18-26 14-64 10-95Z" fill="#2d7b72"/>
+  <path d="M47 137c20-29 42-50 73-76" fill="none" stroke="#174e4a" stroke-linecap="round" stroke-width="9"/>
+  <path d="M72 108c-2-16 1-29 9-42M91 90c14 0 25 3 34 9" fill="none" stroke="#f7f3e9" stroke-linecap="round" stroke-width="7"/>
+</svg>
