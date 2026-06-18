@@ -356,6 +356,124 @@ footer a:focus-visible {
     }
 }
 
+.apps-page main {
+    width: min(900px, calc(100% - 32px));
+}
+
+.apps-header {
+    max-width: 720px;
+}
+
+.apps-page .eyebrow {
+    color: var(--accent);
+}
+
+.apps-directory {
+    display: grid;
+    gap: 16px;
+    margin: 32px 0 24px;
+}
+
+.app-listing {
+    display: grid;
+    grid-template-columns: 96px minmax(0, 1fr);
+    gap: 20px;
+    align-items: center;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 20px;
+    background: var(--panel);
+}
+
+.app-listing img,
+.app-placeholder-icon {
+    width: 96px;
+    height: 96px;
+    border-radius: 22px;
+    box-shadow: 0 12px 28px rgba(28, 32, 34, 0.12);
+}
+
+.app-placeholder-icon {
+    display: grid;
+    place-items: center;
+    background:
+        linear-gradient(135deg, #1f6f68, #385f86);
+    color: #fffaf2;
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.app-listing h2 {
+    margin: 2px 0 6px;
+    font-size: 1.6rem;
+}
+
+.app-listing p {
+    margin: 0;
+}
+
+.app-listing > div > p:not(.app-status) {
+    color: var(--muted);
+}
+
+.app-status {
+    color: var(--accent);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.app-listing-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 12px;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.app-listing-actions .button-link {
+    min-height: 42px;
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.app-listing-actions .button-link.primary {
+    border-color: var(--accent);
+    background: var(--accent);
+    color: var(--bg);
+}
+
+.app-listing-actions .button-link.disabled {
+    border-color: var(--line);
+    color: var(--muted);
+    cursor: default;
+}
+
+.app-listing-actions a:not(.button-link) {
+    font-weight: 700;
+    text-decoration: none;
+}
+
+@media (max-width: 560px) {
+    .app-listing {
+        grid-template-columns: 76px minmax(0, 1fr);
+        gap: 14px;
+        padding: 16px;
+    }
+
+    .app-listing img,
+    .app-placeholder-icon {
+        width: 76px;
+        height: 76px;
+        border-radius: 18px;
+    }
+
+    .app-listing h2 {
+        font-size: 1.25rem;
+    }
+}
+
 .product-page {
     --product-bg: #f2f0eb;
     --product-text: #171a1c;
