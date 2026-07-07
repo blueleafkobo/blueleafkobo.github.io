@@ -592,6 +592,7 @@ footer a:focus-visible {
 
 .product-intro,
 .feature-band,
+.pricing-section,
 .audience-section,
 .faq-section,
 .split-feature,
@@ -610,6 +611,7 @@ footer a:focus-visible {
 
 .product-intro h2,
 .feature-band h2,
+.pricing-section h2,
 .audience-section h2,
 .faq-section h2,
 .split-feature h2,
@@ -621,6 +623,7 @@ footer a:focus-visible {
 }
 
 .product-intro p,
+.pricing-section p,
 .audience-section p,
 .faq-section p,
 .split-feature p,
@@ -696,6 +699,70 @@ footer a:focus-visible {
 .feature-grid p {
     margin: 0;
     font-size: 0.98rem;
+}
+
+.pricing-section {
+    padding: 72px 0;
+}
+
+.pricing-heading {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(280px, 1.1fr);
+    gap: 48px;
+    align-items: start;
+    margin-bottom: 30px;
+}
+
+.pricing-heading h2 {
+    margin: 0;
+}
+
+.pricing-heading > p:not(.eyebrow) {
+    margin: 0;
+}
+
+.tier-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.tier-card {
+    border: 1px solid var(--product-line);
+    border-radius: 8px;
+    padding: 24px;
+    background: color-mix(in srgb, var(--product-panel) 92%, transparent);
+}
+
+.tier-kicker {
+    margin: 0 0 8px;
+    color: var(--product-teal);
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.tier-card h3 {
+    margin: 0 0 14px;
+    font-size: 1.35rem;
+    line-height: 1.2;
+}
+
+.tier-card ul {
+    margin: 0;
+    padding-left: 1.2em;
+}
+
+.tier-card li {
+    margin-bottom: 8px;
+    color: var(--product-muted);
+    font-size: 0.98rem;
+}
+
+.tier-note {
+    margin: 18px 0 0;
+    font-size: 0.96rem;
 }
 
 .audience-section {
@@ -824,6 +891,7 @@ footer a:focus-visible {
     }
 
     .product-intro,
+    .pricing-heading,
     .audience-section,
     .split-feature,
     .split-feature.reverse {
@@ -838,6 +906,7 @@ footer a:focus-visible {
 
     .phone-showcase,
     .feature-grid,
+    .tier-grid,
     .faq-grid {
         grid-template-columns: 1fr;
     }
