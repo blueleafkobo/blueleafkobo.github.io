@@ -26,19 +26,68 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "Touch-Up Mixer",
-        "applicationCategory": "UtilitiesApplication",
-        "operatingSystem": "iOS",
-        "description": "A free-to-start iPhone colour-mixing helper for sampling repair colours from photos, checking practical mixes, saving standalone Repairs, and optionally unlocking larger libraries, Jobs, and exports with Pro.",
-        "url": "https://blueleafkobo.github.io/touch-up-mixer/",
-        "image": "https://blueleafkobo.github.io/assets/touch-up-mixer/app-icon.png",
-        "downloadUrl": "https://apps.apple.com/au/app/touch-up-mixer/id6775458219",
-        "author": {
-            "@type": "Organization",
-            "name": "Blue Leaf Kobo",
-            "url": "https://blueleafkobo.github.io/"
-        }
+        "@graph": [
+            {
+                "@type": "SoftwareApplication",
+                "name": "Touch-Up Mixer",
+                "applicationCategory": "UtilitiesApplication",
+                "operatingSystem": "iOS",
+                "description": "A free-to-start iPhone colour-mixing helper for sampling repair colours from photos, checking practical mixes, saving standalone Repairs, and optionally unlocking larger libraries, Jobs, and exports with Pro.",
+                "url": "https://blueleafkobo.github.io/touch-up-mixer/",
+                "image": "https://blueleafkobo.github.io/assets/touch-up-mixer/app-icon.png",
+                "downloadUrl": "https://apps.apple.com/au/app/touch-up-mixer/id6775458219",
+                "author": {
+                    "@type": "Organization",
+                    "name": "Blue Leaf Kobo",
+                    "url": "https://blueleafkobo.github.io/"
+                }
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Does it guarantee an exact colour match?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "No. Photos and screens vary, so suggestions are practical starting points. Test the real mixture and adjust it under the lighting where the repair will be seen."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Can I use my own repair materials?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. Build palettes from the colours and media on your bench so suggestions reflect the materials you can actually mix."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What is included for free?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "The free app includes photo sampling, repair-area setup, palette selection, suggested mixes, Check Mix, and saved standalone Repairs within the free capacity limits."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Is Pro a subscription?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "No. Pro is a one-time unlock for unlimited saved work, larger palettes, Jobs, shared job photos, exports, and bulk saved-work tools."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Are photos or recipes uploaded?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "No. Photos, palettes, Repairs, Jobs, addresses, and notes remain on your device unless you choose to share an export."
+                        }
+                    }
+                ]
+            }
+        ]
     }
     </script>
 </head>

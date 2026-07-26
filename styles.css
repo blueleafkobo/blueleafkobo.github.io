@@ -1003,6 +1003,56 @@ footer a:focus-visible {
     box-shadow: 0 30px 80px rgba(29, 38, 42, 0.18);
 }
 
+.madegood-showcase {
+    width: min(1180px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 54px 0 84px;
+}
+
+.madegood-showcase-heading {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+    gap: 48px;
+    align-items: end;
+    margin-bottom: 34px;
+}
+
+.madegood-showcase-heading h2 {
+    max-width: 760px;
+    margin: 0;
+    font-size: clamp(2rem, 5vw, 4rem);
+    line-height: 1.04;
+}
+
+.madegood-showcase-heading > p {
+    margin: 0;
+    color: var(--product-muted);
+}
+
+.madegood-screenshot-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+    align-items: start;
+}
+
+.madegood-screenshot-grid figure {
+    min-width: 0;
+    margin: 0;
+}
+
+.madegood-screenshot-grid figure:nth-child(even) {
+    margin-top: 38px;
+}
+
+.madegood-screenshot-grid img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 18px;
+    box-shadow: 0 20px 52px rgba(29, 38, 42, 0.16);
+}
+
 .madegood-workflow {
     width: min(1120px, calc(100% - 40px));
     margin: 0 auto;
@@ -1034,7 +1084,8 @@ footer a:focus-visible {
 
 @media (max-width: 840px) {
     .madegood-hero,
-    .madegood-workflow {
+    .madegood-workflow,
+    .madegood-showcase-heading {
         grid-template-columns: 1fr;
     }
 
@@ -1046,5 +1097,42 @@ footer a:focus-visible {
     .madegood-mark {
         width: min(420px, 100%);
         justify-self: center;
+    }
+
+    .madegood-screenshot-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .madegood-screenshot-grid figure:nth-child(even) {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 560px) {
+    .madegood-showcase {
+        width: 100%;
+        padding: 42px 0 70px;
+        overflow: hidden;
+    }
+
+    .madegood-showcase-heading {
+        width: calc(100% - 40px);
+        margin: 0 auto 28px;
+        gap: 20px;
+    }
+
+    .madegood-screenshot-grid {
+        grid-template-columns: repeat(4, minmax(76vw, 320px));
+        gap: 14px;
+        padding: 0 20px 24px;
+        overflow-x: auto;
+        overscroll-behavior-inline: contain;
+        scroll-padding-inline: 20px;
+        scroll-snap-type: inline mandatory;
+        scrollbar-width: thin;
+    }
+
+    .madegood-screenshot-grid figure {
+        scroll-snap-align: start;
     }
 }

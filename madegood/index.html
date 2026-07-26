@@ -25,19 +25,76 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "MadeGood",
-        "applicationCategory": "BusinessApplication",
-        "operatingSystem": "iOS 18.0 or later",
-        "description": "A free-to-start iPhone app for capturing matching before and after job photos, organising larger jobs with optional Job Areas, and unlocking unlimited sharing and export with MadeGood Pro.",
-        "url": "https://blueleafkobo.github.io/madegood/",
-        "image": "https://blueleafkobo.github.io/assets/madegood/app-icon.png",
-        "downloadUrl": "https://apps.apple.com/au/app/madegood/id6784527027",
-        "author": {
-            "@type": "Organization",
-            "name": "Blue Leaf Kobo",
-            "url": "https://blueleafkobo.github.io/"
-        }
+        "@graph": [
+            {
+                "@type": "SoftwareApplication",
+                "name": "MadeGood",
+                "applicationCategory": "BusinessApplication",
+                "operatingSystem": "iOS 18.0 or later",
+                "description": "A free-to-start iPhone app for capturing matching before and after job photos, organising larger jobs with optional Job Areas, and unlocking unlimited sharing and export with MadeGood Pro.",
+                "url": "https://blueleafkobo.github.io/madegood/",
+                "image": "https://blueleafkobo.github.io/assets/madegood/app-icon.png",
+                "downloadUrl": "https://apps.apple.com/au/app/madegood/id6784527027",
+                "author": {
+                    "@type": "Organization",
+                    "name": "Blue Leaf Kobo",
+                    "url": "https://blueleafkobo.github.io/"
+                }
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Does MadeGood require an account?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "No. Jobs and photos are stored locally on your iPhone, with no account, cloud sync, analytics, or tracking."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Is MadeGood free?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "MadeGood is free to start. You can use the full job-photo workflow and complete 10 exports before upgrading."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What does MadeGood Pro unlock?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "MadeGood Pro unlocks unlimited sharing and export. It is a one-time App Store purchase, not a subscription."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Can I organise a larger job?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. Optional Job Areas can group photo pairs by room, section, stage, or task while simpler jobs can remain one list."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "How can I share the finished work?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Send combined before-and-after images or separate originals for one pair, an area, or the whole job through Messages, Mail, AirDrop, Files, or another app on your iPhone."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Does MadeGood store my photos online?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "No. Jobs and photos are stored locally on your iPhone. MadeGood does not use accounts, cloud sync, analytics, advertising, or tracking."
+                        }
+                    }
+                ]
+            }
+        ]
     }
     </script>
 </head>
@@ -62,6 +119,30 @@
                 <h2 id="intro-title">A simple job-first photo record.</h2>
             </div>
             <p>MadeGood keeps the useful part of before-and-after job photos close at hand. Start a job, capture before photos, return later to line up the after shots, then send the result through Messages, Mail, AirDrop, or the apps you already use on iPhone.</p>
+        </section>
+
+        <section class="madegood-showcase" aria-labelledby="showcase-title">
+            <div class="madegood-showcase-heading">
+                <div>
+                    <p class="eyebrow">See MadeGood in action</p>
+                    <h2 id="showcase-title">A clear record from first photo to finished job.</h2>
+                </div>
+                <p>Keep the work organised, return to the right context, line up the after shot, and review the result before it leaves your iPhone.</p>
+            </div>
+            <div class="madegood-screenshot-grid" aria-label="MadeGood app screenshots">
+                <figure>
+                    <img src="../assets/madegood/01-track-every-job-cleanly.jpg" alt="MadeGood job list showing active, ready, and archived filters with jobs and their photo status." width="960" height="2077" loading="lazy">
+                </figure>
+                <figure>
+                    <img src="../assets/madegood/02-open-the-job-see-the-work.jpg" alt="A MadeGood job with Job Areas, photo counts, and a completed before-and-after pair." width="960" height="2077" loading="lazy">
+                </figure>
+                <figure>
+                    <img src="../assets/madegood/03-match-the-after-shot.jpg" alt="MadeGood camera showing the original photo as a transparent guide for matching the after shot." width="960" height="2077" loading="lazy">
+                </figure>
+                <figure>
+                    <img src="../assets/madegood/04-know-when-it-is-ready.jpg" alt="A completed MadeGood job showing paired before and after photos ready to share." width="960" height="2077" loading="lazy">
+                </figure>
+            </div>
         </section>
 
         <section class="feature-band" aria-labelledby="pricing-title">
