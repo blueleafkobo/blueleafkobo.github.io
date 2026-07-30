@@ -22,6 +22,11 @@ Blue Leaf Kobo makes practical iPhone apps for repair and reuse. All apps share 
 - [MadeGood support](https://blueleafkobo.com/support/madegood/) / [MadeGood privacy policy](https://blueleafkobo.com/privacy/madegood/)
 - [Touch-Up Mixer support](https://blueleafkobo.com/support/touch-up-mixer/) / [Touch-Up Mixer privacy policy](https://blueleafkobo.com/privacy/touch-up-mixer/)
 
+## Practical guides
+
+- [How to take better before-and-after job photos](https://blueleafkobo.com/guides/before-and-after-job-photos/): Practical framing, matching, organisation, and sharing guidance for clear job-photo comparisons with MadeGood.
+- [How to match a paint colour from a photo](https://blueleafkobo.com/guides/match-paint-colour-from-a-photo/): A careful sample, test, and adjust workflow for repair colour matching with Touch-Up Mixer.
+
 ## Optional
 
 - [All apps](https://blueleafkobo.com/apps/)
