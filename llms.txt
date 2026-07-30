@@ -6,8 +6,8 @@ Blue Leaf Kobo makes practical iPhone apps for repair and reuse. All apps share 
 
 ## Apps
 
-- [MadeGood](https://blueleafkobo.github.io/madegood/): Before-and-after job photo app for iPhone. Helps repairers, tradespeople, cleaners, property maintenance teams, and renovators capture matching before and after job photos, organise larger jobs with optional Job Areas, and share results through Messages, Mail, AirDrop, or other apps. Free to start with 10 exports included; MadeGood Pro is a one-time purchase unlocking unlimited sharing and export. [Download on the App Store](https://apps.apple.com/au/app/madegood/id6784527027).
-- [Touch-Up Mixer](https://blueleafkobo.github.io/touch-up-mixer/): Touch-up colour matching and paint mixing app for iPhone. Helps furniture and finish repairers, restorers, makers, decorators, and DIY repairers sample a repair colour from a photo, compare it against their own palette (paint, stain, filler, shellac, putty, wax, pigments), test it with Check Mix, and save the result as a Repair. Free to start with up to 5 saved Repairs and 2 palettes; Touch-Up Mixer Pro is a one-time purchase unlocking unlimited Repairs, palettes, Jobs, and PDF/image export. [Download on the App Store](https://apps.apple.com/au/app/touch-up-mixer/id6775458219).
+- [MadeGood](https://blueleafkobo.com/madegood/): Before-and-after job photo app for iPhone. Helps repairers, tradespeople, cleaners, property maintenance teams, and renovators capture matching before and after job photos, organise larger jobs with optional Job Areas, and share results through Messages, Mail, AirDrop, or other apps. Free to start with 10 exports included; MadeGood Pro is a one-time purchase unlocking unlimited sharing and export. [Download on the App Store](https://apps.apple.com/au/app/madegood/id6784527027).
+- [Touch-Up Mixer](https://blueleafkobo.com/touch-up-mixer/): Touch-up colour matching and paint mixing app for iPhone. Helps furniture and finish repairers, restorers, makers, decorators, and DIY repairers sample a repair colour from a photo, compare it against their own palette (paint, stain, filler, shellac, putty, wax, pigments), test it with Check Mix, and save the result as a Repair. Free to start with up to 5 saved Repairs and 2 palettes; Touch-Up Mixer Pro is a one-time purchase unlocking unlimited Repairs, palettes, Jobs, and PDF/image export. [Download on the App Store](https://apps.apple.com/au/app/touch-up-mixer/id6775458219).
 
 ## Key facts
 
@@ -18,10 +18,10 @@ Blue Leaf Kobo makes practical iPhone apps for repair and reuse. All apps share 
 
 ## Support and policies
 
-- [Support hub](https://blueleafkobo.github.io/support/)
-- [MadeGood support](https://blueleafkobo.github.io/support/madegood/) / [MadeGood privacy policy](https://blueleafkobo.github.io/privacy/madegood/)
-- [Touch-Up Mixer support](https://blueleafkobo.github.io/support/touch-up-mixer/) / [Touch-Up Mixer privacy policy](https://blueleafkobo.github.io/privacy/touch-up-mixer/)
+- [Support hub](https://blueleafkobo.com/support/)
+- [MadeGood support](https://blueleafkobo.com/support/madegood/) / [MadeGood privacy policy](https://blueleafkobo.com/privacy/madegood/)
+- [Touch-Up Mixer support](https://blueleafkobo.com/support/touch-up-mixer/) / [Touch-Up Mixer privacy policy](https://blueleafkobo.com/privacy/touch-up-mixer/)
 
 ## Optional
 
-- [All apps](https://blueleafkobo.github.io/apps/)
+- [All apps](https://blueleafkobo.com/apps/)

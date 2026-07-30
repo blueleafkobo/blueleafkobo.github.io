@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://blueleafkobo.github.io/sitemap.xml
+Sitemap: https://blueleafkobo.com/sitemap.xml

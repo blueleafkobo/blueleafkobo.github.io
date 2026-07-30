@@ -15,7 +15,7 @@ blueleafkobo.github.io
 
 GitHub Pages publishes the site from `main` at:
 
-https://blueleafkobo.github.io/
+https://blueleafkobo.com/
 ```
 
 Future updates are published by committing changes and pushing `main`.
