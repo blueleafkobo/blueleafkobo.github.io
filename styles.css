@@ -571,6 +571,12 @@ footer a:focus-visible {
     margin-top: 28px;
 }
 
+.app-store-open-help {
+    margin: 12px 0 0;
+    font-size: 0.9rem !important;
+    color: rgba(255, 250, 242, 0.76) !important;
+}
+
 .button-link {
     display: inline-flex;
     min-height: 46px;

@@ -25,8 +25,19 @@
             appStoreURL.searchParams.set("mt", validMediaType ? mediaType : "8");
         }
         link.href = appStoreURL.toString();
+        link.target = "_blank";
+        link.rel = "noopener external";
         return true;
     });
+
+    const isInstagramBrowser = /Instagram/i.test(navigator.userAgent);
+    const primaryActions = safeLinks[0] && safeLinks[0].closest(".hero-actions");
+    if (isInstagramBrowser && primaryActions) {
+        const fallback = document.createElement("p");
+        fallback.className = "app-store-open-help";
+        fallback.textContent = "App Store not opening? Press and hold Download, then choose Open Link.";
+        primaryActions.insertAdjacentElement("afterend", fallback);
+    }
 
     if (document.body.hasAttribute("data-open-app-store") && safeLinks[0]) {
         window.location.replace(safeLinks[0].href);
