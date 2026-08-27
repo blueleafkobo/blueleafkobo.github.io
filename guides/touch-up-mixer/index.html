@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Touch-Up Mixer User Guide | Blue Leaf Kobo</title>
-    <meta name="description" content="The complete Touch-Up Mixer guide: palettes, target sampling, repair areas, mix suggestions, Check Mix, saved repairs, jobs, exports and MadeGood integration.">
+    <meta name="description" content="The complete Touch-Up Mixer guide: palettes and catalogue files, target sampling, mix suggestions, Check Mix, saved repairs, jobs, exports and MadeGood integration.">
     <link rel="canonical" href="https://blueleafkobo.com/guides/touch-up-mixer/">
     <meta property="og:type" content="article"><meta property="og:site_name" content="Blue Leaf Kobo"><meta property="og:title" content="Touch-Up Mixer User Guide"><meta property="og:description" content="Learn Touch-Up Mixer with illustrated, searchable guidance for palettes, photo sampling, mix suggestions, Check Mix, saved repairs and jobs."><meta property="og:url" content="https://blueleafkobo.com/guides/touch-up-mixer/"><meta property="og:image" content="https://blueleafkobo.com/assets/touch-up-mixer/palette-video-poster.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Touch-Up Mixer User Guide"><meta name="twitter:description" content="Illustrated, searchable guidance for the complete Touch-Up Mixer workflow."><meta name="twitter:image" content="https://blueleafkobo.com/assets/touch-up-mixer/palette-video-poster.jpg">
     <link rel="icon" href="../../assets/site-icon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="../../assets/touch-up-mixer/app-icon.png">
@@ -41,6 +41,45 @@
                 <figure class="manual-figure manual-figure-portrait"><img src="../../assets/touch-up-mixer/palette-swatches.png" alt="Physical paint swatches beside a neutral grey reference card"><figcaption>Arrange clear swatches in even light. A neutral reference can help you recognise and reduce a colour cast.</figcaption></figure>
                 <h3>Create the palette in the app</h3><ol><li>Open palette management and create a palette.</li><li>Name it and choose the material or medium.</li><li>Add each colour, photograph or import its swatch and sample the painted area.</li><li>Give each colour a clear name.</li></ol>
                 <figure class="manual-figure manual-figure-portrait"><img src="../../assets/touch-up-mixer/palette-colour-sampling.png" alt="New Colour screen sampling the centre of a painted swatch"><figcaption>Place the sampling circle on a solid painted area, away from edges, glare and background.</figcaption></figure>
+                <h3>Load a colour catalogue</h3><p>A <code>.tumpalette</code> file is a reusable colour catalogue for a product range. Import it once, then choose the colours you own and add more from the installed catalogue as your collection grows.</p>
+                <ol><li>Download the <code>.tumpalette</code> file and save it somewhere available in the Files app.</li><li>Open <strong>Colour Catalogues</strong> from the palette area.</li><li>Tap <strong>Import Catalogue File</strong> and select the file.</li><li>Choose an existing palette, or select <strong>New Palette</strong> and enter a palette name.</li><li>Select the <strong>Colours You Own</strong>, then tap <strong>Save</strong>.</li></ol>
+                <p>Later, reopen the installed catalogue to add newly purchased colours or update your owned-colour selection. You can also use <strong>Add from Catalogue</strong> while viewing a connected palette or adding or editing a colour. Select one colour for the normal edit and <strong>Save &amp; Add Another</strong> workflow, or use <strong>Select Multiple</strong> to add several catalogue colours with their supplied names and values.</p>
+                <h3>Catalogue updates and adjustments</h3><ul><li>Importing the same version opens the installed catalogue instead of creating a duplicate.</li><li>Importing a newer version lets you review changes individually or update the whole palette.</li><li>A colour you have sampled or manually adjusted is identified as adjusted and is not silently overwritten.</li><li>Removing a catalogue colour from all connected palettes updates <strong>Colours You Own</strong>.</li><li>Deleting an installed catalogue does not delete palette colours already created from it.</li></ul>
+                <div class="manual-warning manual-note"><strong>File safety:</strong> Touch-Up Mixer treats <code>.tumpalette</code> files as catalogue data, not programs. It checks their structure and colour values and does not run scripts or macros from them. As with any downloaded file, import catalogues only from a source you trust.</div>
+                <details>
+                    <summary><strong>Advanced: create your own <code>.tumpalette</code> file</strong></summary>
+                    <p>A technically confident user—or an AI assistant—can create a catalogue as a UTF-8 JSON text file. Save it with the <code>.tumpalette</code> extension. Do not use a word processor that adds formatting.</p>
+                    <pre><code>{
+  "formatIdentifier": "com.blueleafkobo.touchupmixer.palette-catalogue",
+  "schemaVersion": 1,
+  "catalogue": {
+    "id": "com.yourname.catalogues.my-range",
+    "version": 1,
+    "name": "My Product Range",
+    "colourSpace": "sRGB",
+    "mediumProfile": {
+      "medium": "meltedWaxFillStick",
+      "opacity": "opaque",
+      "modifiers": [],
+      "notes": "",
+      "customName": "",
+      "ingredientUse": "fillerBody",
+      "compatibleThinnerName": ""
+    },
+    "colours": [
+      {
+        "id": "colour-001",
+        "code": "001",
+        "name": "Medium Walnut",
+        "hex": "#875331"
+      }
+    ]
+  }
+}</code></pre>
+                    <p>Keep the format identifier and schema version exactly as shown. Give the catalogue a stable, non-empty ID and a positive whole-number version. Every colour needs a stable, unique ID, a name and a six-digit sRGB value such as <code>#875331</code>. Keep IDs unchanged when publishing corrections, and increase the catalogue version for each update. JSON does not allow comments or trailing commas.</p>
+                    <p>When working from a PDF or chart, use the manufacturer's most recent official source, sample away from text, borders and glare, and record the source edition or URL. Chart-derived RGB values are starting references rather than measurements of the physical material, so verify important colours against the real product. Make sure you have permission to reproduce or distribute the manufacturer's catalogue content.</p>
+                    <p>If an AI assistant prepares the file, give it this example and the source data, then ask it to preserve the schema, create stable unique IDs, copy names and codes exactly, use only six-digit sRGB values and return valid JSON. Review the result yourself: importing successfully does not prove that the colour data is accurate.</p>
+                </details>
                 <p>The app adjusts its mixing rules and guidance to suit the selected medium and opacity.</p>
                 <figure class="manual-figure manual-video"><video controls playsinline preload="metadata" poster="../../assets/touch-up-mixer/palette-video-poster.jpg"><source src="../../assets/touch-up-mixer/palette-setup.mp4" type="video/mp4">Your browser does not support embedded video.</video><figcaption>Watch the palette setup flow: capture the colours you already own, sample each swatch and save practical labels.</figcaption></figure>
             </section>
@@ -103,6 +142,7 @@
                 <h2>Troubleshooting</h2>
                 <h3>The camera or photo library will not open</h3><p>Open iOS Settings, find Touch-Up Mixer and confirm Camera and Photos access.</p>
                 <h3>A palette colour samples badly</h3><p>Use a dry, evenly lit swatch; move the sample away from glare, labels, edges and background. Retake the photo when necessary.</p>
+                <h3>A catalogue file will not import</h3><p>Check that the filename ends in <code>.tumpalette</code>, the file contains valid JSON, every colour has a unique ID and each colour value uses <code>#</code> followed by exactly six hexadecimal characters. Files using another format or schema version are rejected.</p>
                 <h3>The suggested recipe needs more adjustment</h3><p>Confirm the correct palette and medium, then try the “Best available” direction and use Check Mix to refine it.</p>
                 <h3>Check Mix gives repeated warnings</h3><p>Check the sample circle, lighting, wet sheen and swatch texture. Resample or remix from a more suitable component if changes are not moving toward the target.</p>
                 <h3>Save Repair is disabled</h3><p>If it reads Repair Saved, the current Repair has not changed since the last save. Change a meaningful part of the Repair to enable Update Repair.</p>
