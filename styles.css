@@ -304,6 +304,44 @@ footer a:focus-visible {
         linear-gradient(145deg, #fffaf0 0%, #eef4ee 100%);
 }
 
+.blueprint-card {
+    --card-accent: #8fddff;
+    --card-button: #17629c;
+    color: #f4faff;
+    background: linear-gradient(145deg, #153e68, #092a4c);
+}
+
+.blueprint-card .product-card-copy > p:not(.product-kicker),
+.blueprint-card .product-card-actions a {
+    color: #dceefd;
+}
+
+.blueprint-availability {
+    display: inline-block;
+    margin-top: 14px;
+    padding: 4px 10px;
+    border: 1px solid #6899bf;
+    border-radius: 999px;
+    color: #dceefd;
+    font-size: 0.78rem;
+    font-weight: 600;
+}
+
+.blueprint-grid {
+    position: absolute;
+    inset: 0;
+    border: 1px solid #729cc04d;
+    border-radius: 12px;
+    background-image: linear-gradient(#729cc033 1px, transparent 1px), linear-gradient(90deg, #729cc033 1px, transparent 1px);
+    background-size: 28px 28px;
+    transform: rotate(-4deg);
+}
+
+.blueprint-card a:focus-visible {
+    outline: 3px solid #8fddff;
+    outline-offset: 4px;
+}
+
 .product-card-copy {
     position: relative;
     z-index: 3;

@@ -1,24 +1,27 @@
 # Blue Leaf Kobo
 
-> Blue Leaf Kobo makes practical iPhone apps for repair, reuse, and keeping useful things out of landfill. Apps are built for tradespeople, repairers, and careful DIYers, are free to start, store data locally on-device with no accounts or tracking, and offer a one-time Pro unlock instead of a subscription.
+> Blue Leaf Kobo makes practical apps for repairers, makers and careful DIYers. MadeGood and Touch-Up Mixer are available for iPhone. BlueprintPlotter, for turning STL models into blueprint artwork on Mac, is in development.
 
-Blue Leaf Kobo makes practical iPhone apps for repair and reuse. All apps share the same approach: a genuinely useful free tier, no ads, no analytics, no cloud accounts, and a single one-time purchase (not a subscription) for Pro features.
+MadeGood and Touch-Up Mixer are free to start with one-time Pro purchases. BlueprintPlotter pricing and download availability have not been announced. App privacy statements do not describe website analytics.
 
 ## Apps
+
+- [BlueprintPlotter](https://blueleafkobo.com/blueprint-plotter/): In-development macOS app for importing STL models, arranging blueprint views and exporting SVG artwork for pen-plotting workflows. Local processing; no account required. Not a 3D editor or certified engineering tool. [User guide](https://blueleafkobo.com/guides/blueprint-plotter/).
 
 - [MadeGood](https://blueleafkobo.com/madegood/): Before-and-after job photo app for iPhone. Helps repairers, tradespeople, cleaners, property maintenance teams, and renovators capture matching before and after job photos, organise larger jobs with optional Job Areas, and share results through Messages, Mail, AirDrop, or other apps. Free to start with 10 exports included; MadeGood Pro is a one-time purchase unlocking unlimited sharing and export. [Download on the App Store](https://apps.apple.com/au/app/madegood/id6784527027).
 - [Touch-Up Mixer](https://blueleafkobo.com/touch-up-mixer/): Touch-up colour matching and paint mixing app for iPhone. Helps furniture and finish repairers, restorers, makers, decorators, and DIY repairers sample a repair colour from a photo, compare it against their own palette (paint, stain, filler, shellac, putty, wax, pigments), test it with Check Mix, and save the result as a Repair. Free to start with up to 5 saved Repairs and 2 palettes; Touch-Up Mixer Pro is a one-time purchase unlocking unlimited Repairs, palettes, Jobs, and PDF/image export. [Download on the App Store](https://apps.apple.com/au/app/touch-up-mixer/id6775458219).
 
 ## Key facts
 
-- All apps are iOS/iPhone only, built by Blue Leaf Kobo.
+- MadeGood and Touch-Up Mixer are iPhone apps; BlueprintPlotter is for Mac.
 - Data (jobs, photos, repairs, palettes) is stored locally on-device. No accounts, no cloud sync, no analytics, no advertising, no tracking.
-- Pricing model across the studio: free to start, with a one-time App Store purchase for Pro. No subscriptions.
+- MadeGood and Touch-Up Mixer are free to start with a one-time Pro purchase. BlueprintPlotter pricing is not yet announced.
 - Target users: tradespeople, repairers, cleaners, renovators, restorers, makers, decorators, maintenance professionals, and careful DIYers.
 
 ## Support and policies
 
 - [Support hub](https://blueleafkobo.com/support/)
+- [BlueprintPlotter support](https://blueleafkobo.com/support/blueprint-plotter/) / [BlueprintPlotter privacy policy](https://blueleafkobo.com/privacy/blueprint-plotter/)
 - [MadeGood support](https://blueleafkobo.com/support/madegood/) / [MadeGood privacy policy](https://blueleafkobo.com/privacy/madegood/)
 - [Touch-Up Mixer support](https://blueleafkobo.com/support/touch-up-mixer/) / [Touch-Up Mixer privacy policy](https://blueleafkobo.com/privacy/touch-up-mixer/)
 
