@@ -77,6 +77,7 @@
   }
 }</code></pre>
                     <p>Keep the format identifier and schema version exactly as shown. Give the catalogue a stable, non-empty ID and a positive whole-number version. Every colour needs a stable, unique ID, a name and a six-digit sRGB value such as <code>#875331</code>. Keep IDs unchanged when publishing corrections, and increase the catalogue version for each update. JSON does not allow comments or trailing commas.</p>
+                    <p>Catalogue files are limited to 5 MiB and 5,000 colours. Catalogue and colour IDs can contain up to 256 characters, normal names and display fields up to 512 characters, and longer descriptions or source references up to 4,096 characters. Colour names cannot be blank.</p>
                     <p>When working from a PDF or chart, use the manufacturer's most recent official source, sample away from text, borders and glare, and record the source edition or URL. Chart-derived RGB values are starting references rather than measurements of the physical material, so verify important colours against the real product. Make sure you have permission to reproduce or distribute the manufacturer's catalogue content.</p>
                     <p>If an AI assistant prepares the file, give it this example and the source data, then ask it to preserve the schema, create stable unique IDs, copy names and codes exactly, use only six-digit sRGB values and return valid JSON. Review the result yourself: importing successfully does not prove that the colour data is accurate.</p>
                 </details>
