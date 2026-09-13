@@ -15,11 +15,11 @@ Treat the first git addition and last commit only as repository-history evidence
 | [MadeGood user guide](../guides/madegood/index.html) | Product manual | 2026-08-25 (`ae9dffb`) | 2026-09-01 (`60e3e03`) | Unknown |
 | [How to match a paint colour from a photo](../guides/match-paint-colour-from-a-photo/index.html) | Practical article | 2026-07-30 (`71321b0`) | 2026-08-18 (`8b24df4`) | Unknown |
 | [Touch-Up Mixer user guide](../guides/touch-up-mixer/index.html) | Product manual | 2026-08-25 (`ae9dffb`) | 2026-09-08 (`90e644a`) | Unknown |
-| [Why I Built Touch-Up Mixer: Colour Matching for Furniture Repairs](../touch-up-mixer/why-i-built-it/index.html) | Personal story | 2026-09-13 (website draft) | 2026-09-13 (publication revision) | Publication authorised 2026-09-13; live verification pending |
+| [Why I Built Touch-Up Mixer: Colour Matching for Furniture Repairs](../touch-up-mixer/why-i-built-it/index.html) | Personal story | 2026-09-13 (website draft) | 2026-09-13 (publication revision) | 2026-09-13 (verified live) |
 
 ## Current local revisions
 
-- **2026-09-13 — Why I Built Touch-Up Mixer:** rewritten from the author's supplied LinkedIn article, built as a website page, then illustrated with a still from the author's mixing demonstration and an app screenshot. User reviewed the illustrated layout positively. Publication authorised on 2026-09-13.
+- **2026-09-13 — Why I Built Touch-Up Mixer:** rewritten from the author's supplied LinkedIn article, built as a website page, then illustrated with a still from the author's mixing demonstration and an app screenshot. User reviewed the illustrated layout positively. Published and verified live on 2026-09-13, commit `acb1c22`, [GitHub Pages deployment 34733555238](https://github.com/blueleafkobo/blueleafkobo.github.io/actions/runs/34733555238).
 - **2026-09-13 — How to match a paint colour from a photo:** related-reading link to the origin story added locally; the existing guide was not newly written today. Included in the 2026-09-13 publication revision.
 - **Original LinkedIn article:** posted before this website adaptation, according to the author. Exact publication date and LinkedIn URL were not supplied; keep both unknown until confirmed.
 
