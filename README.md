@@ -27,3 +27,7 @@ The published support address is:
 ```text
 blueleafkobo+support@gmail.com
 ```
+
+## Article history
+
+Maintain [the article and guide date register](docs/article-register.md) when adding, revising or publishing editorial pages. It preserves date evidence for a future article or blog index.

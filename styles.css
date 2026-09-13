@@ -1514,3 +1514,52 @@ footer a:focus-visible {
         margin: 18px 0 0;
     }
 }
+
+/* Origin story: readable workflow steps and links in both colour schemes. */
+.story-page .guide-content a {
+    color: var(--guide-accent);
+    text-underline-offset: 0.18em;
+}
+
+.story-page .guide-content ol {
+    max-width: 720px;
+    padding-left: 1.5em;
+    color: var(--guide-muted);
+    font-size: 1.08rem;
+}
+
+.story-page .guide-content li + li {
+    margin-top: 12px;
+}
+
+.story-images {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+    gap: 28px;
+    max-width: 720px;
+    margin: 32px 0 8px;
+}
+
+.story-images figure { margin: 0; }
+
+.story-images img {
+    display: block;
+    width: 100%;
+    height: 440px;
+    object-fit: contain;
+    border-radius: 12px;
+    background: var(--guide-panel);
+}
+
+.story-images figcaption {
+    margin-top: 12px;
+    color: var(--guide-muted);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+    .story-images { grid-template-columns: 1fr; gap: 28px; }
+    .story-images img { height: auto; max-height: 520px; }
+}
