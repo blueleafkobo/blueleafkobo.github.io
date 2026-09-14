@@ -20,7 +20,7 @@
 .bp .cards .panel { margin:0; border-radius:16px; }
 .bp .cards h2 { margin-top:0; }
 .bp .product-shot { margin:32px 0; }
-.bp .product-shot img { display:block; width:100%; height:auto; border:1px solid var(--line); border-radius:16px; box-shadow:0 18px 48px #092d4b1f; }
+.bp .product-shot img { display:block; width:100%; height:auto; padding:10px; border:1px solid var(--line); border-radius:18px; background:var(--media-surface); box-shadow:0 18px 48px #092d4b1f; }
 .bp .product-shot figcaption { max-width:760px; margin:14px auto 0; color:var(--muted); text-align:center; }
 .bp .product-shot figcaption strong { color:var(--text); }
 .bp .product-shot-wide { margin:40px 0 56px; }

@@ -19,6 +19,7 @@ Treat the first git addition and last commit only as repository-history evidence
 
 ## Current local revisions
 
+- **2026-09-13 — Website visual uplift:** standardised screenshot framing across the product pages, manuals and articles. Added five existing Touch-Up Mixer screenshots to the practical colour-matching guide; repository history showed that guide had previously been published without inline screenshots, so no dated article images were replaced.
 - **2026-09-13 — Why I Built Touch-Up Mixer:** rewritten from the author's supplied LinkedIn article, built as a website page, then illustrated with a still from the author's mixing demonstration and an app screenshot. User reviewed the illustrated layout positively. Published and verified live on 2026-09-13, commit `acb1c22`, [GitHub Pages deployment 34733555238](https://github.com/blueleafkobo/blueleafkobo.github.io/actions/runs/34733555238).
 - **2026-09-13 — How to match a paint colour from a photo:** related-reading link to the origin story added locally; the existing guide was not newly written today. Included in the 2026-09-13 publication revision.
 - **Original LinkedIn article:** posted before this website adaptation, according to the author. Exact publication date and LinkedIn URL were not supplied; keep both unknown until confirmed.
