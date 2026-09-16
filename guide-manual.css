@@ -3,17 +3,17 @@
 .manual-hero .eyebrow { margin-bottom: .5rem; }
 .manual-search { margin: 1.25rem 0 0; }
 .manual-search label { display: block; font-weight: 700; margin-bottom: .45rem; }
-.manual-search input { width: 100%; box-sizing: border-box; padding: .9rem 1rem; border: 1px solid rgba(33, 53, 47, .25); border-radius: 12px; font: inherit; background: #fff; color: inherit; }
-.manual-search input:focus { outline: 3px solid rgba(34, 118, 91, .24); border-color: #22765b; }
+.manual-search input { width: 100%; box-sizing: border-box; padding: .9rem 1rem; border: 1px solid var(--guide-line); border-radius: 12px; font: inherit; background: var(--guide-panel); color: var(--guide-text); }
+.manual-search input:focus { outline: 3px solid rgba(34, 118, 91, .24); border-color: var(--guide-accent); }
 .manual-search p { margin: .45rem 0 0; font-size: .9rem; }
 .manual-layout { display: grid; grid-template-columns: minmax(220px, 280px) minmax(0, 1fr); gap: 2rem; align-items: start; }
-.manual-toc { position: sticky; top: 1rem; padding: 1.1rem; border-radius: 16px; background: rgba(255,255,255,.72); border: 1px solid rgba(33,53,47,.12); }
+.manual-toc { position: sticky; top: 1rem; padding: 1.1rem; border-radius: 16px; background: color-mix(in srgb, var(--guide-panel) 72%, transparent); border: 1px solid var(--guide-line); }
 .manual-toc h2 { font-size: 1rem; margin: 0 0 .65rem; }
 .manual-toc ol { margin: 0; padding-left: 1.2rem; }
 .manual-toc li + li { margin-top: .38rem; }
 .manual-toc a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
 .manual-content { min-width: 0; }
-.manual-section { scroll-margin-top: 1rem; margin: 0 0 1.25rem; padding: clamp(1.15rem, 2.5vw, 2rem); border-radius: 18px; background: rgba(255,255,255,.78); border: 1px solid rgba(33,53,47,.12); }
+.manual-section { scroll-margin-top: 1rem; margin: 0 0 1.25rem; padding: clamp(1.15rem, 2.5vw, 2rem); border-radius: 18px; background: color-mix(in srgb, var(--guide-panel) 78%, transparent); border: 1px solid var(--guide-line); }
 .manual-section[hidden] { display: none; }
 .manual-section h2 { margin-top: 0; }
 .manual-section h3 { margin-top: 1.4rem; }

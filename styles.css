@@ -59,6 +59,22 @@ nav a {
     text-decoration: none;
 }
 
+.site-nav {
+    align-items: center;
+    margin: 0 0 36px;
+    gap: 16px 24px;
+}
+
+.site-nav a:first-child {
+    margin-right: auto;
+}
+
+@media (max-width: 700px) {
+    .site-nav {
+        gap: 12px 18px;
+    }
+}
+
 h1 {
     margin: 0;
     font-size: clamp(2rem, 6vw, 3.25rem);
@@ -742,6 +758,24 @@ footer a:focus-visible {
     z-index: -1;
 }
 
+.product-hero .site-nav {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: min(720px, calc(100% - 40px));
+    margin: 0;
+    padding: 10px 16px;
+    background: rgba(11, 13, 14, 0.55);
+    border-radius: 14px;
+    backdrop-filter: blur(6px);
+}
+
+.product-hero .site-nav a {
+    color: #fffaf2;
+}
+
 .product-hero-copy {
     width: min(720px, calc(100% - 40px));
     margin: 0 auto;
@@ -1195,6 +1229,12 @@ footer a:focus-visible {
     padding: 0;
 }
 
+.madegood-page main > .site-nav {
+    width: min(1120px, calc(100% - 40px));
+    margin: 0 auto 36px;
+    padding-top: 28px;
+}
+
 .madegood-hero {
     width: min(1120px, calc(100% - 40px));
     min-height: 82svh;
@@ -1405,9 +1445,15 @@ footer a:focus-visible {
 
 .guide-hero,
 .guide-content,
-.guide-page .product-footer {
+.guide-page .product-footer,
+.guide-page main > .site-nav {
     width: min(900px, calc(100% - 40px));
     margin: 0 auto;
+}
+
+.guide-page main > .site-nav {
+    padding-top: 28px;
+    margin-bottom: 36px;
 }
 
 .guide-hero {
