@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<meta name="referrer" content="no-referrer">
+<title>Returning to Loom Workbench</title>
+</head>
+<body style="font-family: -apple-system, system-ui, sans-serif; margin: 3rem auto; max-width: 32rem; padding: 0 1rem;">
+<h1 style="font-size: 1.2rem;">Returning to Loom Workbench…</h1>
+<p id="help" hidden>If nothing happened, make sure Loom Workbench is open and still waiting for the sign-in, then start the sign-in again from the app.</p>
+<script>
+location.replace("http://127.0.0.1:51847/" + location.search);
+setTimeout(function () { document.getElementById("help").hidden = false; }, 3000);
+</script>
+</body>
+</html>
